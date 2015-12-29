@@ -1,9 +1,6 @@
 {
 	"sections"  :
 	[
-    { "name" : "Home",
-	  "icon" : "home"
-	},
     {
       "name" : "Projects",
       "icon" : "fire"
