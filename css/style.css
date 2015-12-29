@@ -1,5 +1,14 @@
 .icon {
-  color: #2C7CC3;
+	color: #2C7CC3;
+}
+
+.section {
+	opacity: .85;
+}
+
+.section:hover {
+	opacity: 1.0;
+	color: #f4511e;
 }
 
 .body {
