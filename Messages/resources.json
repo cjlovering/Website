@@ -1,6 +1,7 @@
 {
-	"sections"  :[
-	{ "name" : "Home",
+	"sections"  :
+	[
+    { "name" : "Home",
 	  "icon" : "home"
 	},
     {
