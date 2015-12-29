@@ -1,0 +1,26 @@
+{
+	"sections"  :[
+	{ "name" : "Home",
+	  "icon" : "home"
+	},
+    {
+      "name" : "Projects",
+      "icon" : "fire"
+    },
+    {
+      "name" : "Professional",
+      "icon" : "globe"
+    },    
+    {
+      "name" : "Classes",
+      "icon" : "pencil"
+    },    
+    {
+      "name" : "Music",
+      "icon" : "music"
+    },
+    {
+      "name" : "Contact",
+      "icon" : "send"
+    }]
+}

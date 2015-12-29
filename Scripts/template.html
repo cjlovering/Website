@@ -1,0 +1,23 @@
+<!-- template for ractive -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="glyphicon glyphicon-menu-hamburger icon"> </span>                       
+    </button>
+      <a class="navbar-brand" href="#">{{name}}</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        {{#each sections}}
+          <li><a href="#"><span class="glyphicon glyphicon-{{icon}} icon"></span>  {{name}}</a></li>
+        {{/each}}     
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+ <h1>My First Bootstrap Page</h1>
+ <p>This is some text.</p> 
+</div>
