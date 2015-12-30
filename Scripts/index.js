@@ -14,9 +14,10 @@ $(document).ready(function(){
       data: { 
         name : 'Charlie Lovering',
         sections : [],
-        current_page : 0,
+        current_page : 1,
         classes : [],
-        jobs: []
+        jobs: [],
+        projects: []
       }
     });
 
@@ -29,7 +30,11 @@ $(document).ready(function(){
     $.when(info).done(function(r){
       ractive.set('jobs', r.jobs);
       ractive.set('classes', r.classes);
-    })
+      console.log(r.projects);
+      console.log(r.jobs);
+
+      ractive.set('projects', r.projects);
+    });
 
     ractive.on( 'toggle', function ( event ) {
       this.toggle( event.keypath + '.expanded' );

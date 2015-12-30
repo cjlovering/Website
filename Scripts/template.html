@@ -5,7 +5,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
       <span class="glyphicon glyphicon-menu-hamburger icon"> </span>                       
     </button>
-      <a class="navbar-brand section" href="#">{{name}}</a>
+      <a class="navbar-brand section" href="#" on-tap="show:0">{{name}}</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -65,11 +65,27 @@
     </div>
   </div>
   {{elseif current_page==1}}
-      <div class="jumbotron" intro-outro="slide:{duration:fast}">
-        <h1>Hello, worldworldworld!</h1>
-        <p>{{name}}</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
+        <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1>
     </div>
+
+    <ul class="nav nav-pills">
+      <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-menu-hamburger icon"></span>
+        </a>
+        <ul class="dropdown-menu">
+            {{#each jobs}}
+              <li><a href="#">{{title}}</a></li>
+            {{/each}}
+        </ul>
+      </li>
+      
+      <li><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+      <li><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+
+
   {{elseif current_page==2}}
     <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
         <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1>
@@ -85,7 +101,9 @@
               <img height="200" width="200" src="Images/{{visual}}">
               <h3>{{company}}   -   {{title}} </h3>
               <p>{{range}}</p>
-              <h5>{{description}}</h5>
+              <div class="well">
+                <p>{{description}}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -126,11 +144,22 @@
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
     </div>
   {{elseif current_page==5}}
-    <div class="jumbotron" intro-outro="slide:{duration:fast}">
-      <h1>Hello, world!</h1>
-      <p>{{name}}</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-
+    <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
+      <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>     About</h1>
+      <div class="well">
+      <p>{{name}} is an undergraduate at WPI pursuing a Bachelors' Computer Science degree and in his 'free' time he enjoys skiing, surfing, playing hockey, and reading books. </p>
+      </div>
+    </div>
+    <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
+      <h1><span class="glyphicon glyphicon-send icon"></span>      Contact</h1>
+      <div class="well">
+        <p>lovering@wpi.edu</p>
+        <p>Teaching Assistant (Undegraduate)</p>
+        <p>Department of Computer Science</p>
+        <p>Worcester Polytechnic Institute</p>
+        <p>100 Institute Road</p>
+        <p>Worcester, MA 01609 </p>
+      </div>
     </div>
   {{/if}}
 </div>

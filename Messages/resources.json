@@ -21,8 +21,8 @@
 	      "icon" : "music"
 	    },
 	    {
-	      "name" : "Contact",
-	      "icon" : "send"
+	      "name" : "About",
+	      "icon" : "user"
 	    }
     ]
 }
