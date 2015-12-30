@@ -1,0 +1,100 @@
+{
+	"classes" :[
+			{
+				"name" : "Software Engineering",
+				"grade" : "A",
+				"average" : 94,
+				"description" : "Topics include requirements analysis and specification, analysis and design, architecture, implementation, testing and quality, configuration management, and project management.",
+				"year": 2015,
+				"term": "A"
+			},
+		    {
+				"name" : "Operating Systems",
+				"grade" : "A",
+				"average" : 96,
+				"description" : "Topics include processes, process management, synchronization, input/output devices and their programming, interrupts, memory management, resource allocation, and an introduction to file systems.",
+				"year": 2015,
+				"term": "A"
+			},
+			{
+				"name" : "Algorithms",
+				"grade" : "A",
+				"average" : 95,
+				"description" : "Topics include greedy algorithms, divide-and-conquer, dynamic programming, heuristics, and probabilistic algorithms.",
+				"year": 2015,
+				"term": "B"
+			}, 
+			{
+				"name" : "Assembly language",
+				"grade" : "A",
+				"average" : 94,
+				"description" : "Assembly language topics include representations of numbers in computers, basic instruction sets, addressing modes, stacks and procedures, low-level I/O, and the functions of compilers, assemblers, linkers, and loaders.",
+				"year": 2015,
+				"term": "D"
+			},
+			{
+				"name" : "Program Design",
+				"grade" : "A",
+				"average" : 93,
+				"description" : "Design, implementation and testing of programs that use a variety of data structures (structures, lists, and trees), functions, conditionals, and recursion in a functional programming language.",
+				"year": 2014,
+				"term": "A"			
+			},   
+			{
+				"name" : "Object-Oriented Design",
+				"grade" : "A",
+				"average" : 92,
+				"description" : "Topics include inheritance, exceptions, interface, design by contract, basic design patterns, and reuse.",
+				"year": 2014,
+				"term": "B"
+			},
+			{
+				"name" : "Systems Programing",
+				"grade" : "A",
+				"average" : 99,
+				"description" : "This course covers manual memory management, pointers, the machine stack, and input/ output mechanisms. The course will involve large-scale programming exercises and will be designed to help students confront issues of safe programming with system-level constructs.",
+				"year": 2015,
+				"term": "C"
+			},
+			{
+				"name" : "Linear Alegbra",
+				"grade" : "A",
+				"average" : 94,
+				"description" : "Topics covered include: matrix algebra, systems of linear equations, eigenvalues and eigenvectors, least squares, vector spaces, inner products, and introduction to numerical techniques, and applications of linear algebra.",
+				"year": 2015,
+				"term": "D"
+			},
+			{
+				"name" : "Probabilty",
+				"grade" : "A",
+				"average" : 99,
+				"description" : "Topics to be covered are: basic probability theory including Bayes theorem; discrete and continuous random variables; special distributions including the Bernoulli, Binomial, Geometric, Poisson, Uniform, Normal, Exponential, Chisquare, Gamma, Weibull, and Beta distributions; multivariate distributions; conditional and marginal distributions; independence; expectation; transformations of univariate random variables. ",
+				"year": 2015,
+				"term": "C"
+			},
+		    {
+				"name" : "Discrete Math",
+				"grade" : "A",
+				"average" : 91,
+				"description" : "Topics include functions and relations, sets, countability, groups, graphs, propositional and predicate calculus, and permutations and combinations.",
+				"year": 2015,
+				"term": "A"
+			},    
+			{
+				"name" : "Calculus III",
+				"grade" : "A",
+				"average" : 99,
+				"description" : "Topics covered include: numerical methods, indeterminate forms, improper integrals, sequences, Taylor's theorem with remainder, convergence of series and power series, polar coordinates, parametric curves and vector algebra.",
+				"year": 2014,
+				"term": "A"
+			},
+		    {
+				"name" : "Calculus IV",
+				"grade" : "A",
+				"average" : 98,
+				"description" : "Topics covered include: vector functions, partial derivatives and gradient, multivariable optimization, double and triple integrals, polar coordinates, other coordinate systems and applications.",
+				"year": 2014,
+				"term": "B"
+			}
+		]
+}

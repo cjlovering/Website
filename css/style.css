@@ -13,8 +13,9 @@
 
 .body {
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', 'Open-Light', sans-serif;
+  font-weight: 'lighter'
 }
 
 #containerTotal {
-	margin: 5px;
+	margin: 10px;
 }
