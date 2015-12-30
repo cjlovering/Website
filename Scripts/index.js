@@ -15,7 +15,8 @@ $(document).ready(function(){
         name : 'Charlie Lovering',
         sections : [],
         current_page : 0,
-        classes : []
+        classes : [],
+        jobs: []
       }
     });
 
@@ -24,10 +25,9 @@ $(document).ready(function(){
       ractive.set('sections', r.sections);
     });
 
-    var classes_load = $.getJSON('messages/classes.json');
-    $.when(classes_load).done(function(r){
-      console.log(r);
-      console.log(r.classes);
+    var info = $.getJSON('messages/info.json');
+    $.when(info).done(function(r){
+      ractive.set('jobs', r.jobs);
       ractive.set('classes', r.classes);
     })
 

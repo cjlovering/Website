@@ -96,5 +96,21 @@
 				"year": 2014,
 				"term": "B"
 			}
-		]
+		],
+    	"jobs"	:[
+			{
+	    		"company" : "WPI Computer Science",
+	    		"title"	: "Teaching Assistant",
+	    		"range"	: "September 2015  -  Current",
+	    		"description" : "Systems Programming, Program Design. Lead labs, held office hours and graded student work.",
+	    		"visual" : "wpi.png"
+	    	},
+	    	{
+	    		"company" : "Imagitas",
+	    		"title"	: "Software Engineer Intern",
+	    		"range"	: "June 2015  -  August 2015",
+	    		"description" : "Wrote, modified and enhanced build and deployment scripts. Enhanced testing with a robot suite using selenium. Helped move group from SVN to git.",
+	    		"visual" : "imagitas.jpg"
+	    	}
+	    ]
 }
