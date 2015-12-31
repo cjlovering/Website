@@ -18,7 +18,12 @@ $(document).ready(function(){
         current_project: 0,
         classes : [],
         jobs: [],
-        projects: []
+        projects: [],
+        showC : function() {
+          var l = projects[current_project].visuals.length;
+          console.log(l);
+          return (l > 0);
+        }
       }
     });
 
@@ -48,17 +53,34 @@ $(document).ready(function(){
       }});
 
     ractive.on({
-    showProject: function ( event, which ) {
-        console.log(which);
-        var p = ractive.get('projects');
-        which = which % p.length;
-        console.log(which);
-
+      
+      showProject: function ( event, which ) {
         ractive.set( 'current_project', null ).then( function () {
           ractive.set( 'current_project', which );
-          });
-      
-
-      }});
+        })
+      },
+      next: function ( event ) {
+          var n = ractive.get("current_project");
+          var l = ractive.get('projects').length;
+          n += 1;
+          if (n == l) {
+            n = 0;
+          }
+          ractive.set( 'current_project', null ).then( function () {
+          ractive.set( 'current_project', n );
+        })
+      },
+      prev: function ( event ) {
+          var n = ractive.get("current_project");
+          n -= 1;
+          if (n < 0) {
+            var l = ractive.get('projects').length;
+            n = l - 1;
+          }
+          ractive.set( 'current_project', null ).then( function () {
+          ractive.set( 'current_project', n );
+        })
+      }
+    });
   });
 });
