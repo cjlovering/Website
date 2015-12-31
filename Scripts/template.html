@@ -75,15 +75,81 @@
           <span class="glyphicon glyphicon-menu-hamburger icon"></span>
         </a>
         <ul class="dropdown-menu">
-            {{#each jobs}}
-              <li><a href="#">{{title}}</a></li>
+            {{#each projects:num}}
+              <li><a on-tap="showProject:{{num}}">{{title}}</a></li>
             {{/each}}
         </ul>
       </li>
       
-      <li><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
-      <li><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+      <li><a on-tap="showProject:{{ current_page - 1 }}"><span aria-hidden="true">&larr;</span> Previous</a></li>
+      <li><a on-tap="showProject:{{ current_page + 1 }}">Next <span aria-hidden="true">&rarr;</span></a></li>
+     <li><a> {{projects[current_project].title}} </a></li>
+
     </ul>
+    
+    {{#with projects[current_project]}}
+      <div class="panel panel-default">
+        <div class="center-block panel-body">
+          <p>{{description}}</p>
+        </div>
+      </div>
+
+     {{#if visuals != null}}
+     <div id="carousel-example-generic" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        {{#each visuals:num}}
+        <li data-target="#carousel-example-generic" data-slide-to="{{num}}" {{#if num==0}}class="active"{{/if}}></li>
+        {{/each}}
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        {{#each visuals:num}}
+        <div class="item {{#if num==0}}active{{/if}}">
+          <img class="img-responsive center-block" src="Images/{{this}}" height="946" width="587">
+          <div class="carousel-caption">
+            {{captions[num]}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    {{/if}}
+
+
+
+      <div class="panel panel-default">
+      <div class="center-block panel-body">
+      <div class="row" intro-outro='fade'>
+      {{#each languages}}
+      <div class="outlined col-sm-3">
+        <span>{{this}}</span> 
+      </div> 
+      {{/each}}
+      </div>
+      </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="center-block panel-body">
+          <a href="{{link}}"><span>Check me out on GitHub</span></a>
+        </div>
+      </div>
+    {{/with}}   
+    
+
 
 
   {{elseif current_page==2}}

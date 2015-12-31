@@ -15,6 +15,7 @@ $(document).ready(function(){
         name : 'Charlie Lovering',
         sections : [],
         current_page : 1,
+        current_project: 0,
         classes : [],
         jobs: [],
         projects: []
@@ -30,9 +31,6 @@ $(document).ready(function(){
     $.when(info).done(function(r){
       ractive.set('jobs', r.jobs);
       ractive.set('classes', r.classes);
-      console.log(r.projects);
-      console.log(r.jobs);
-
       ractive.set('projects', r.projects);
     });
 
@@ -46,6 +44,20 @@ $(document).ready(function(){
         ractive.set( 'current_page', null ).then( function () {
           ractive.set( 'current_page', which );
           });
+
+      }});
+
+    ractive.on({
+    showProject: function ( event, which ) {
+        console.log(which);
+        var p = ractive.get('projects');
+        which = which % p.length;
+        console.log(which);
+
+        ractive.set( 'current_project', null ).then( function () {
+          ractive.set( 'current_project', which );
+          });
+      
 
       }});
   });
