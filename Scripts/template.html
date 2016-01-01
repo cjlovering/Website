@@ -155,6 +155,149 @@
         <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1>
     </div>
 
+    <div class="jumbotron" intro-outro="fade:{duration:fast}">
+    <h2> <span class="glyphicon glyphicon-pencil icon" aria-hidden="true"></span> Curriculem Vitae </h2>
+      
+    <!--<object data="Images/cv.pdf" type='application/pdf' height="880" width="640"> </object>-->
+    <h4> Education </h4>
+    <div class="row" intro-outro='fade'>
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class='panel-body'intro='fade' >
+                  {{#with cv.education}}
+                  <p>{{college}}  -  ({{short}}) </p>
+                  <p>{{degree}} - {{yog}}</p>
+                  <p> GPA: {{gpa}}, <span class="class selected"> {{parseFloat(Math.round(gpaMajor * 100) / 100).toFixed(2)}}</span>[in major]</p>
+                  {{/with}}
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <h4> Skills </h4>
+    <div class="row" intro-outro='fade'>
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class='panel-body'intro='fade' >
+                  {{#with cv.skills}}
+                  <p> Languages:
+                    {{#each languages:i}}
+                    &nbsp; {{this}}
+                    {{/each}}
+                  </p>
+                   <p> Operating Systems:
+                    {{#each operatingsystems}}
+                    &nbsp; {{this}}
+                    {{/each}}
+                  </p>
+                   <p> Applications:
+                    {{#each applications}}
+                    &nbsp; {{this}}
+                    {{/each}}
+                  </p>  
+                  {{/with}}
+                </div>
+              </div>
+            </div>
+    </div>
+
+
+    <h4> Class Projects </h4>
+    <div class="row" intro-outro='fade'>
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class='panel-body'intro='fade' >
+                  {{#each cv.classprojects}}
+                    <p>{{class}}</p>
+                    <small>{{range}}</small>
+                    <ul>
+                    {{#each description}}
+                      <li>
+                      {{this}}
+                      </li>
+                    {{/each}}
+                    </ul>
+                  {{/each}}
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <h4> Projects </h4>
+    <div class="row" intro-outro='fade'>
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class='panel-body'intro='fade' >
+                  <ul>
+                  {{#each cv.projects}}
+                    <li>
+                      {{this}}
+                    </li>
+                  {{/each}}
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <h4> Work Experiance </h4>
+    <div class="row" intro-outro='fade'>
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class='panel-body'intro='fade' >
+                  {{#each cv.workexperiance}}
+                    <p>{{company}} - {{title}}</p>
+                    <small>{{range}}</small>
+                    <ul>
+                    {{#each description}}
+                      <li>
+                      {{this}}
+                      </li>
+                    {{/each}}
+                    </ul>
+                  {{/each}}
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <h4> Awards </h4>
+    <div class="row" intro-outro='fade'>
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class='panel-body'intro='fade' >
+                  <ul>
+                  {{#each cv.awards}}
+                    <li>
+                      {{this}}
+                    </li>
+                  {{/each}}
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <h4> Activies </h4>
+    <div class="row" intro-outro='fade'>
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class='panel-body'intro='fade' >
+                  <ul>
+                  {{#each cv.activies}}
+                    <li>
+                      {{this}}
+                    </li>
+                  {{/each}}
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+
+  </div>
+
+
     <div class="jumbotron text-center" intro-outro="fade:{duration:fast}">
       <h2> <span class="glyphicon glyphicon-cog icon" aria-hidden="true"></span> Employment </h2>
       <div class="row" intro-outro='fade'>
@@ -175,10 +318,9 @@
       </div>
     </div>
 
-    <div class="jumbotron text-center" intro-outro="fade:{duration:fast}">
-      <h2> <span class="glyphicon glyphicon-pencil icon" aria-hidden="true"></span> Curriculem Vitae </h2>
-      <object data="Images/cv.pdf" type='application/pdf' height="880" width="640"> </object>
-    </div>
+
+
+
 
   {{elseif current_page==3}}
       <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">

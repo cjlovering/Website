@@ -19,6 +19,7 @@ $(document).ready(function(){
         classes : [],
         jobs: [],
         projects: [],
+        cv: {},
         showC : function() {
           var l = projects[current_project].visuals.length;
           return (l > 0);
@@ -36,6 +37,7 @@ $(document).ready(function(){
       ractive.set('jobs', r.jobs);
       ractive.set('classes', r.classes);
       ractive.set('projects', r.projects);
+      ractive.set('cv', r.cv);
     });
 
     ractive.on( 'toggle', function ( event ) {
