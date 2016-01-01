@@ -12,7 +12,7 @@
 				"name" : "Operating Systems",
 				"grade" : "A",
 				"average" : 96,
-				"description" : "Topics include processes, process management, synchronization, input/output devices and their programming, interrupts, memory management, resource allocation, and an introduction to file systems.",
+				"description" : "Topics include processes, process management, synchronization, input/output devices and their programming, interrupts, memory management, resource allocation, and file systems.",
 				"year": 2015,
 				"term": "A"
 			},
@@ -20,7 +20,7 @@
 				"name" : "Algorithms",
 				"grade" : "A",
 				"average" : 95,
-				"description" : "Topics include greedy algorithms, divide-and-conquer, dynamic programming, heuristics, and probabilistic algorithms.",
+				"description" : "Topics include greedy algorithms, divide-and-conquer, dynamic programming, heuristics, and probabilistic algorithms. Algorithms covered include Dikstra's Algorithm, AStar, quick sort and merge sort.",
 				"year": 2015,
 				"term": "B"
 			}, 
@@ -52,7 +52,7 @@
 				"name" : "Systems Programing",
 				"grade" : "A",
 				"average" : 99,
-				"description" : "This course covers manual memory management, pointers, the machine stack, and input/ output mechanisms. The course will involve large-scale programming exercises and will be designed to help students confront issues of safe programming with system-level constructs.",
+				"description" : "Topics include manual memory management, pointers, the machine stack, and I/O mechanisms. The course is designed to confront issues of safe programming with system-level constructs.",
 				"year": 2015,
 				"term": "C"
 			},
@@ -60,7 +60,7 @@
 				"name" : "Linear Alegbra",
 				"grade" : "A",
 				"average" : 94,
-				"description" : "Topics covered include: matrix algebra, systems of linear equations, eigenvalues and eigenvectors, least squares, vector spaces, inner products, and introduction to numerical techniques, and applications of linear algebra.",
+				"description" : "Topics include matrix algebra, systems of linear equations, eigenvalues and eigenvectors, vector spaces, inner products, and introduction to numerical techniques, and applications of linear algebra.",
 				"year": 2015,
 				"term": "D"
 			},

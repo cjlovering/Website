@@ -23,3 +23,13 @@
 .selected{
 	color:#34b3a0;
 }
+
+.class {
+	opacity: .85;
+}
+
+.class:hover {
+	opacity: 1.0;
+	color: #fff;
+	background-color: #34b3a0;
+}

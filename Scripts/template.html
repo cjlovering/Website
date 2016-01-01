@@ -87,7 +87,7 @@
 
     </ul>
     
-      <div class="panel panel-default">
+      <div class="panel panel-default" >
         <div class="center-block panel-body">
           <p>{{projects[current_project].description}}</p>
         </div>
@@ -186,16 +186,15 @@
         <div class="row" intro-outro='fade'>
             {{#each classes}}
             <div class="col-sm-4">
-              <div on-tap='toggle' class="panel panel-default">
-                {{#!expanded}}
-                <div class='panel-body'intro-outro='fade' >
+              <div on-tap='toggle' class="panel panel-default class">
+                {{#if !expanded}}
+                <div class='panel-body'intro='fade' >
                   <p>{{name}} </p>
                   <p>{{average}} - {{grade}}</p>
                 </div>
-                {{/expanded}}
-                {{#expanded}}
-                  <div class="panel-body" intro-outro='fade'>{{description}}</div>
-                {{/expanded}}
+                {{elseif expanded}}
+                  <div class="panel-body" intro='fade'>{{description}}</div>
+                {{/if}}
                 </div>
               </div>
             {{/each}}

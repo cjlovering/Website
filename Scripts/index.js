@@ -14,14 +14,13 @@ $(document).ready(function(){
       data: { 
         name : 'Charlie Lovering',
         sections : [],
-        current_page : 1,
+        current_page : 3,
         current_project: 0,
         classes : [],
         jobs: [],
         projects: [],
         showC : function() {
           var l = projects[current_project].visuals.length;
-          console.log(l);
           return (l > 0);
         }
       }
@@ -66,6 +65,7 @@ $(document).ready(function(){
           if (n == l) {
             n = 0;
           }
+
           ractive.set( 'current_project', null ).then( function () {
           ractive.set( 'current_project', n );
         })
