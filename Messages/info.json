@@ -164,5 +164,112 @@
 		    	"captions" : ["The Game in Action", "Pause Screen", "Defeat Screen"],
 		    	"link": "https://github.com/cjlovering/2048/tree/master/src/sample"
 		    }
-	    ]
+	    ],
+	    "cv" : {
+	    	"objective" : "Summer internship in Computer Science.",
+	    	"education" : {
+	    		"college" : "Worcester Polytechnic Institute",
+	    		"short" : "WPI",
+	    		"degree": "Bachelor of Science in Computer Science",
+	    		"yog" : "May 2018",
+	    		"gpa" : 3.94,
+	    		"gpaMajor": 4.00,
+	    		"coursework": [
+					 "Software Engineering", "Operating Systems", "Theory of Computation*", "Algorithms", "Foundations of Computer Science*", "Database Systems*", "Human-Computer Interaction*", "Object-Oriented Design", "Systems Programing", "Machine Organization and Assembly Language"
+	    		]
+	    	},
+	    	"skills" : {
+	    		"languages": [
+	    			"Java", "C", "Python", "Racket", "Javascript", "Html", "CSS", "Rative.js", "jQuery", "Bootstrap"
+	    		],
+	    		"operatingsystems": [
+	    			"Mac OS", "Ubuntu (Linux)", "Windows"
+	    		],
+	    		"applications": [
+	    			"Intellij", "Git", "EMACS", "Vim", "Eclipse", "Sublime Text", "NetBeans", "GitHub", "Maven", "Tomcat", "Bamboo", "Virtual Box", "Webstorm"
+	    		]
+	    	},
+	    	"classprojects": 
+	    		[
+					{
+						"class": "Software Engineering",
+						"range": "October - December 2015",
+						"description":
+							[
+								"Lead large team in organization, structure design and software development in the creation of a Mapping Tool application using Java, UML and the Agile process.",
+								"Built polished UI of the mapping tool using JavaFX, integrating teammates’ work into a final product."
+							]
+					},
+					{
+						"class": "Operating Systems",
+						"range": "August - October 2015",
+						"description":
+							[
+								"Developed a system call to report process statistics",
+								"Designed and developed a shell simulator capable of background task execution",
+								"Injected system calls into Linux kernel to monitor user activity"
+ 							]
+					},
+					{
+						"class": "Algorithms",
+						"range": "October - December 2015",
+						"description":
+							[
+								"Developed a three-way merge sort, a priority queue, and an anagram solver",
+								"Implemented quick, heap, and merge sort"
+							]
+					},
+					{
+						"class": "Object-Oriented Design",
+						"range": "October - December 2015",
+						"description":
+							[
+								"Designed, developed and tested java code to organize a city network structure",
+								"Applied recursion, memoization, and proper code encapsulation to develop the program"
+							]
+					}
+	    		],
+	    "projects":
+	    	[
+	    		"Developed an application that solves any system of equations using the Gauss Jordan Algorithm",
+	    		"Created a dynamic website",
+	    		"Used JavaFX to build games 2048 and Snake.",
+	    		"Used Python to create a set of methods that implement discrete mathematical functions",
+	    		"Used JavaScript, Html and CSS to create personal website."
+	    	],
+	    "workexperiance":
+	    	[
+	    	{
+	    		"company" : "Imagitas",
+	    		"title"	: "Software Engineer Intern",
+	    		"range"	: "June 2015  -  August 2015",
+	    		"description" :
+	    			[
+	    				"Developed, maintained, and enhanced build and deployment scripts",
+	    				"Led meetings teaching colleagues how to effectively utilize Git and bamboo",
+	    				"Enhanced automatic testing of source code by writing selenium tests using a robot framework"
+	    			]
+	    	},
+	    	{
+				"company" : "WPI Computer Science",
+	    		"title"	: "Teaching Assistant",
+	    		"range"	: "September 2015  -  Current",
+	    		"description" : [
+	    			"Systems Programming, Program Design. Lead labs, held office hours and graded student work."
+	    		]
+	    	}
+	    	],
+	    "activies":
+	    	[
+	    		"Ice Hockey Club, WPI, September 2014 – Present",
+	    		"Cyber-Security Club, WPI, September 2015 – Present",
+	    		"Academic Decathlon, ABRHS, September 2013 – April 2014"
+	    	],
+	    "awards":
+	    	[
+	    		"Charles Thompson Award 2014-2015",
+	    		"9th at Academic Decathlon Nationals, Hawaii, April 2014",
+	    		"Gold at the Academic Decathlon State Competition in Mathematics, Economics, English Language Arts, Social Science, Speech, and Bronze in Music, Massachusetts, February 2014"
+	    	]
+	    }
 	}
