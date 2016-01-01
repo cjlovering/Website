@@ -14,7 +14,7 @@ $(document).ready(function(){
       data: { 
         name : 'Charlie Lovering',
         sections : [],
-        current_page : 3,
+        current_page : 0,
         current_project: 0,
         classes : [],
         jobs: [],
