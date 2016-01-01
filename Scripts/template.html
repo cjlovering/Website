@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         {{#each sections:num}}
-          <li><a href="#" class="section" on-tap="show:{{num}}"><span class="glyphicon glyphicon-{{icon}} icon"></span>  {{name}}</a></li>
+          <li><a href="#" class="section"  on-tap="show:{{num}}"><span class="glyphicon glyphicon-{{icon}} icon {{#if num==current_page}}selected{{/if}}"></span>  {{name}}</a></li>
         {{/each}}     
       </ul>
     </div>
@@ -76,14 +76,14 @@
         </a>
         <ul class="dropdown-menu">
             {{#each projects:num}}
-              <li><a on-tap="showProject:{{num}}">{{title}}</a></li>
+              <li><a on-tap="showProject:{{num}}"><span {{#if current_project==num}}class="selected"{{/if}}>{{title}}</span></a></li>
             {{/each}}
         </ul>
       </li>
       
       <li><a on-tap="prev"><span aria-hidden="true">&larr;</span> Previous</a></li>
       <li><a on-tap="next">Next <span aria-hidden="true">&rarr;</span></a></li>
-     <li><a> {{projects[current_project].title}} </a></li>
+      <li><a><span class="selected"> {{projects[current_project].title}} </span></a></li>
 
     </ul>
     
@@ -143,7 +143,7 @@
 
       <div class="panel panel-default">
         <div class="center-block panel-body">
-          <a href="{{projects[current_project].link}}"><span>Check me out on GitHub</span></a>
+          <a href="{{projects[current_project].link}}"><span>Check out {{projects[current_project].title}} on GitHub</span></a>
         </div>
       </div>
     

@@ -19,3 +19,7 @@
 #containerTotal {
 	margin: 10px;
 }
+
+.selected{
+	color:#34b3a0;
+}
