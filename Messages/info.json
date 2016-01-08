@@ -23,14 +23,14 @@
 				"description" : "Topics include greedy algorithms, divide-and-conquer, dynamic programming, heuristics, and probabilistic algorithms. Algorithms covered include Dikstra's Algorithm, AStar, quick sort and merge sort.",
 				"year": 2015,
 				"term": "B"
-			}, 
+			},
 			{
-				"name" : "Assembly language",
+				"name" : "Object-Oriented Design",
 				"grade" : "A",
-				"average" : 94,
-				"description" : "Assembly language topics include representations of numbers in computers, basic instruction sets, addressing modes, stacks and procedures, low-level I/O, and the functions of compilers, assemblers, linkers, and loaders.",
-				"year": 2015,
-				"term": "D"
+				"average" : 92,
+				"description" : "Topics include inheritance, exceptions, interface, design by contract, basic design patterns, and reuse.",
+				"year": 2014,
+				"term": "B"
 			},
 			{
 				"name" : "Program Design",
@@ -41,12 +41,12 @@
 				"term": "A"			
 			},   
 			{
-				"name" : "Object-Oriented Design",
+				"name" : "Assembly language",
 				"grade" : "A",
-				"average" : 92,
-				"description" : "Topics include inheritance, exceptions, interface, design by contract, basic design patterns, and reuse.",
-				"year": 2014,
-				"term": "B"
+				"average" : 94,
+				"description" : "Assembly language topics include representations of numbers in computers, basic instruction sets, addressing modes, stacks, low-level I/O, and the functions of compilers, assemblers, andlinkers, and loaders.",
+				"year": 2015,
+				"term": "D"
 			},
 			{
 				"name" : "Systems Programing",
@@ -60,7 +60,7 @@
 				"name" : "Linear Alegbra",
 				"grade" : "A",
 				"average" : 94,
-				"description" : "Topics include matrix algebra, systems of linear equations, eigenvalues and eigenvectors, vector spaces, inner products, and introduction to numerical techniques, and applications of linear algebra.",
+				"description" : "Topics include matrix algebra, systems of equations, eigenvalues and eigenvectors, vector spaces, inner products,  numerical techniques, and applications of linear algebra.",
 				"year": 2015,
 				"term": "D"
 			},
