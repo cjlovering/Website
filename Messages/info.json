@@ -271,5 +271,20 @@
 	    		"9th at Academic Decathlon Nationals, Hawaii, April 2014",
 	    		"Gold at the Academic Decathlon State Competition in Mathematics, Economics, English Language Arts, Social Science, Speech, and Bronze in Music, Massachusetts, February 2014"
 	    	]
+	    },
+	    "spotify" :
+	    [
+	    {
+	    	"name" : "Alternative",
+	    	"uri"  : "spotify:user:flovering:playlist:2syRZrOjMFcIvWlmw6qRCu"
+	    },
+	    {
+	    	"name" : "Future",
+	    	"uri"  : "spotify:user:flovering:playlist:2R8rZuOnuwJ6xuboC6LX8M"
+	    },
+	    {
+	    	"name" : "Rap",
+	    	"uri"  : "spotify:user:flovering:playlist:1CMJ61UdD2fHSkF3vygUpZ"
 	    }
+	    ]
 	}

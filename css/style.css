@@ -47,3 +47,13 @@ canvas {
 .canvas-container {
     position: absolute;
 }
+
+.wrapper {
+	background-color: #34b3a0;
+	padding: 50px;
+   
+    position: relative;
+    overflow:auto;
+
+
+}
