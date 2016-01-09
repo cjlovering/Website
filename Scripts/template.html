@@ -306,10 +306,25 @@
             {{/each}}
         </div>
       </div>
-  {{elseif current_page==4}}
-      <div class="jumbotron" intro-outro="slide:{duration:fast}">
-      <h1>Coming soon!</h1>
-    </div>
+  {{elseif current_page==4}}      
+      <div class="wrapper" intro-outro="slide:{duration:fast}">
+        {{#each playlists:num}}
+        {{#if current_playlist==num}}
+        <div class="outlined col-sm-5">
+          <iframe src="https://embed.spotify.com/?uri={{uri}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+        {{/if}}
+        {{/each}}
+        <div class="outlined col-sm-4">
+            <h3><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h3>
+            <ul class="nav nav-pills">
+               <li><a on-tap="prevSong"><span aria-hidden="true">&larr;</span> Previous</a></li>
+               <li><a><span> {{playlists[current_playlist].name}} </span></a></li>
+               <li><a on-tap="nextSong">Next <span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+        </div>
+      </div>
+
   {{elseif current_page==5}}
     <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
       <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>     About</h1>

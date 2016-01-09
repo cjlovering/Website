@@ -13,9 +13,12 @@ $(document).ready(function(){
 
       data: { 
         name : 'Charlie Lovering',
+        cover: true,
         sections : [],
         current_page : 0,
         current_project: 0,
+        current_playlist: 2,
+        playlists: [],
         classes : [],
         jobs: [],
         projects: [],
@@ -34,10 +37,12 @@ $(document).ready(function(){
 
     var info = $.getJSON('Messages/info.json');
     $.when(info).done(function(r){
+      console.log(r.spotify);
       ractive.set('jobs', r.jobs);
       ractive.set('classes', r.classes);
       ractive.set('projects', r.projects);
       ractive.set('cv', r.cv);
+      ractive.set('playlists', r.spotify);
     });
 
     ractive.on( 'toggle', function ( event ) {
@@ -54,7 +59,29 @@ $(document).ready(function(){
       }});
 
     ractive.on({
-      
+     nextSong: function ( event ) {
+          var n = ractive.get("current_playlist");
+          var l = ractive.get('playlists').length;
+          n += 1;
+          if (n == l) {
+            n = 0;
+          }
+
+          ractive.set( 'current_playlist', null ).then( function () {
+          ractive.set( 'current_playlist', n );
+        })
+      },
+      prevSong: function ( event ) {
+          var n = ractive.get("current_playlist");
+          n -= 1;
+          if (n < 0) {
+            var l = ractive.get('playlists').length;
+            n = l - 1;
+          }
+          ractive.set( 'current_playlist', null ).then( function () {
+          ractive.set( 'current_playlist', n );
+        })
+      },
       showProject: function ( event, which ) {
         ractive.set( 'current_project', null ).then( function () {
           ractive.set( 'current_project', which );
