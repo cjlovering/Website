@@ -7,9 +7,10 @@
             var rate = 100;
             var target; //move towards target
             var seek = true;     //move away from
+            var lagger = 0;
 
             $(document).ready(function(){
-                
+
                 canvas = document.getElementById('starzone');
                
                 if (canvas.getContext){
@@ -32,6 +33,7 @@
                     canvas.addEventListener("mouseup", function(eventInfo){
                         //may want to do more here ... EXPLODE
                         seek = false;
+                        lagger = 150;
                         target = {x: eventInfo.offsetX || eventInfo.layerX, y:eventInfo.offsetY || eventInfo.layerY};
                     });
 
@@ -58,15 +60,22 @@
                 this.lag = Math.random() < 0.8 ? Math.floor((Math.random() * 13) + 2) : ( Math.random() * 48 + 2 );//Math.floor((Math.random() * 48) + 2);
                 this.r = 5;
                 this.color = "#" + ("000000" + (0xFFFFFF*Math.random()).toString(16)).substr(-6); //original random color
-                this.t = {x: Math.floor((Math.random() * canvas.width) + 1), y: Math.floor((Math.random() * canvas.height) + 1)};
-
+                this.t;
                 //this.color = {r: Math.floor(255 * Math.random()), g: Math.floor(255 * Math.random()), b: Math.floor(255 * Math.random())};
                 this.i = 1;
+                this.t = {x: Math.floor((Math.random() * canvas.width) + 1), y: Math.floor((Math.random() * canvas.height) + 1)};
+
 
                 this.React = function(){
         
+                    //abrupt change from resting to this
                     var ratio = (Math.sqrt( square(target.x - this.x) + square(target.y - this.y) ) / (canvas.width));
-                    this.r =  Math.floor ( 25 * ratio ) + 1;
+                    if (this.i == 2) {
+                        this.r = ((Math.floor ( 25 * ratio ) + 1) + this.r * 3) / 4;
+                        
+                    } else {
+                        this.r =  Math.floor ( 25 * ratio ) + 1;
+                    }
 
                     if (seek){
 
@@ -81,8 +90,8 @@
 
                         } else {
 
-                            this.x += (target.x - this.x) * .5 / (this.r + this.lag);
-                            this.y += (target.y - this.y) * .5 / (this.r + this.lag);
+                            this.x += (target.x - this.x) * .5 / (this.r + this.lag + lagger);
+                            this.y += (target.y - this.y) * .5 / (this.r + this.lag + lagger);
 
 
                             if (Math.abs(target.x - this.x) < 3 && Math.abs(target.y - this.y) < 3){
@@ -145,9 +154,9 @@
 
             function loop(){
                 setTimeout(function(){
-                
                     drawStars();
                     loop();
+                    if (seek && lagger > 0) lagger -= 10;
 
                 }, 1000/rate);
             }
