@@ -18,6 +18,7 @@ $(document).ready(function(){
         current_page : 0,
         current_project: 1,
         current_playlist: 0,
+        current_script: 0,
         playlists: [],
         classes : [],
         jobs: [],
@@ -59,6 +60,13 @@ $(document).ready(function(){
       }});
 
     ractive.on({
+     toggleScripts: function ( event ) {
+        var n = ractive.get("current_script");
+        if (n == 1) n = 0;
+        else n = 1;
+
+        ractive.set( 'current_script', n);
+     },
      nextSong: function ( event ) {
           var n = ractive.get("current_playlist");
           var l = ractive.get('playlists').length;

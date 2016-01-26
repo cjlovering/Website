@@ -19,21 +19,39 @@
 
 <div class="container-fluid">
   {{#if current_page==0}}
-<!--    
-<div class="canvas-container">
-    <div class="welcome"></div>
-    <canvas id="hexmap"></canvas>
-    <script src="Scripts/hexlife.js"> </script>
-</div>
--->
 
-  
-<div class="canvas-container calvin">
-    <div class="welcome"></div>
-    <canvas id="starzone"></canvas>
-    <script src="Scripts/Stars.js"> </script>
-</div>
+    {{#if current_script==0}}
+    <div class="canvas-container calvin">
+      <div class="welcome"></div>
+      <canvas id="starzone"></canvas>
+       <script type="text/javascript">
+          $("html").css("background-image", "url(\"Images/calvin.jpg\")");
+          $("body").css("background-image", "url(\"Images/calvin.jpg\")");
+        </script>
+      <script src="Scripts/Stars.js"> </script>
+    </div>
+    {{elseif current_script==1}}
 
+
+    <div class="canvas-container">
+      <div class="welcome"></div>
+      <canvas id="hexmap"></canvas>
+         <script type="text/javascript">
+          $("html").css("background-image", "none");
+          $("body").css("background-image", "none");
+        </script>
+      <script src="Scripts/hexlife.js"> </script>
+    </div>
+
+    {{/if}}
+
+  <div class="floater">
+
+  <button type="button" on-tap="toggleScripts">
+      <span class="glyphicon glyphicon-menu-right icon"> </span>                       
+    </button>
+
+  </div>
 
   {{elseif current_page==1}}
     <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">

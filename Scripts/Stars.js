@@ -116,7 +116,6 @@
 
 
                         } else {
-                            console.log(this.i);
 
                             this.x += 4 * xx; 
                             this.y += 4 * yy;
