@@ -18,7 +18,7 @@ $(document).ready(function(){
         current_page : 0,
         current_project: 1,
         current_playlist: 0,
-        current_script: 0,
+        current_script: 1,
         playlists: [],
         classes : [],
         jobs: [],
@@ -62,8 +62,9 @@ $(document).ready(function(){
     ractive.on({
      toggleScripts: function ( event ) {
         var n = ractive.get("current_script");
-        if (n == 1) n = 0;
-        else n = 1;
+        if (n == 0) n = 1;
+        else if (n == 1) n = 2
+        else n = 0;
 
         ractive.set( 'current_script', n);
      },

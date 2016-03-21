@@ -21,6 +21,7 @@
   {{#if current_page==0}}
 
     {{#if current_script==0}}
+
     <div class="canvas-container calvin">
       <div class="welcome"></div>
       <canvas id="starzone"></canvas>
@@ -30,6 +31,7 @@
         </script>
       <script src="Scripts/Stars.js"> </script>
     </div>
+    
     {{elseif current_script==1}}
 
 
@@ -43,11 +45,24 @@
       <script src="Scripts/hexlife.js"> </script>
     </div>
 
+     {{elseif current_script==2}}
+
+
+    <div class="canvas-container">
+      <div class="welcome"></div>
+      <canvas id="pixelMap"></canvas>
+         <script type="text/javascript">
+          $("html").css("background-image", "none");
+          $("body").css("background-image", "none");
+        </script>
+      <script src="Scripts/JSGradient.js"> </script>
+    </div>
+
     {{/if}}
 
   <div class="floater">
 
-  <button type="button" on-tap="toggleScripts">
+    <button type="button" on-tap="toggleScripts">
       <span class="glyphicon glyphicon-menu-right icon"> </span>                       
     </button>
 
