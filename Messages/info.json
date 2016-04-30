@@ -68,9 +68,41 @@
 				"name" : "Probabilty",
 				"grade" : "A",
 				"average" : 99,
-				"description" : "Topics to be covered are: basic probability theory including Bayes theorem; discrete and continuous random variables; special distributions including the Bernoulli, Binomial, Geometric, Poisson, Uniform, Normal, Exponential, Chisquare, Gamma, Weibull, and Beta distributions; multivariate distributions; conditional and marginal distributions; independence; expectation; transformations of univariate random variables. ",
+				"description" : "Topics to be covered are: basic probability theory, discrete and continuous random variables; special distributions including the Bernoulli, Binomial, Geometric, Poisson, Uniform, Normal, Exponential, Chisquare, Gamma, Weibull, and Beta distributions; multivariate distributions; conditional and marginal distributions; independence; expectation; transformations of univariate random variables. ",
 				"year": 2015,
 				"term": "C"
+			},
+			{
+				"name" : "Foundations",
+				"grade" : "A",
+				"average" : 93,
+				"description" : "Topics include computational models, formal languages, and an introduction to compatibility and complexity theory, including NP-completeness."
+				"year": 2016,
+				"term": "C"
+			},
+			{
+				"name" : "Database Systems",
+				"grade" : "A",
+				"average" : 97,
+				"description" : "Topics include the relational data model, relational query languages, design theory, and conceptual data design and modeling for relational database design."
+				"year": 2016,
+				"term": "C"
+			},
+			{
+				"name" : "Theory of Computation",
+				"grade" : "?",
+				"average" : 0,
+				"description" : "Topics include the halting program, the Church-Turing thesis, primitive recursive functions, recursive sets, recursively enumerable sets, NP-completeness, and reducibilities. "
+				"year": 2016,
+				"term": "D"
+			},
+			{
+				"name" : "Programming languages",
+				"grade" : "?",
+				"average" : 0,
+				"description" : "Topics include data structures for representing programming languages, implementing control structures (such as functions, recursion, and exceptions), garbage collection, and type systems. Students will be expected to implement several small languages using a functional programming language. "
+				"year": 2016,
+				"term": "D"
 			},
 		    {
 				"name" : "Discrete Math",
@@ -79,7 +111,15 @@
 				"description" : "Topics include functions and relations, sets, countability, groups, graphs, propositional and predicate calculus, and permutations and combinations.",
 				"year": 2015,
 				"term": "A"
-			},    
+			},
+			{
+				"name" : "Statistics I",
+				"grade" : "?",
+				"average" : 0,
+				"description" : "It was a joke, let's be honest."
+				"year": 2016,
+				"term": "D"
+			}, 
 			{
 				"name" : "Calculus III",
 				"grade" : "A",
