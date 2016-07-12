@@ -168,7 +168,7 @@
 		    	"title" : "CapraNav",
 		        "brief"	: "Mapping tool for WPI.",
 		        "languages"	: ["Java", "JavaFX", "JSON", "XML"],
-		       	"description" : "CapraNav is a navigation system for the Worcester Polytechnic Institute campus. It provides detailed maps of the campus and of several buildings. The program provides turn-by-turn directions as well as a graphically drawn path on the maps. We also developed a MapBuilder tool too speed up the process of adding nodes and edges to maps. It is very intuitive to use; you can add nodes and edges to maps by clicking directly on the maps.",
+		       	"description" : "CapraNav is a navigation system for the Worcester Polytechnic Institute campus. It provides detailed maps of the campus and of several buildings. The program provides turn-by-turn directions as well as a graphically drawn path on the maps. We also developed a MapBuilder tool to speed up the process of adding nodes and edges to maps. It is very intuitive to use; you can add nodes and edges to maps by clicking directly on the maps.",
 		       	"visual" : true,
 		       	"visuals" : ["CapraNav.png", "Tutorial.png", "team.jpeg", "teamwork.png"],
 		    	"captions" : ["The Application in Action", "Tutorial for the First Use", "The Winning Team", "Teamwork in Motion"],
