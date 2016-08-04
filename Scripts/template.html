@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <span class="glyphicon glyphicon-menu-hamburger icon"> </span>                       
+      <span class="glyphicon glyphicon-menu-hamburger icon"> </span>
     </button>
       <a class="navbar-brand section" href="#" on-tap="show:0">{{name}}</a>
     </div>
@@ -11,7 +11,7 @@
       <ul class="nav navbar-nav">
         {{#each sections:num}}
           <li><a href="#" class="section"  on-tap="show:{{num}}"><span class="glyphicon glyphicon-{{icon}} icon {{#if num==current_page}}selected{{/if}}"></span>  {{name}}</a></li>
-        {{/each}}     
+        {{/each}}
       </ul>
     </div>
   </div>
@@ -19,8 +19,6 @@
 
 <div class="container-fluid">
   {{#if current_page==0}}
-
-    {{#if current_script==0}}
 
     <div class="canvas-container calvin">
       <div class="welcome"></div>
@@ -31,47 +29,15 @@
         </script>
       <script src="Scripts/Stars.js"> </script>
     </div>
-    
-    {{elseif current_script==1}}
 
-
-    <div class="canvas-container">
-      <div class="welcome"></div>
-      <canvas id="hexmap"></canvas>
-         <script type="text/javascript">
-          $("html").css("background-image", "none");
-          $("body").css("background-image", "none");
-        </script>
-      <script src="Scripts/hexlife.js"> </script>
-    </div>
-
-     {{elseif current_script==2}}
-
-
-    <div class="canvas-container">
-      <div class="welcome"></div>
-      <canvas id="pixelMap"></canvas>
-         <script type="text/javascript">
-          $("html").css("background-image", "none");
-          $("body").css("background-image", "none");
-        </script>
-      <script src="Scripts/JSGradient.js"> </script>
-    </div>
-
-    {{/if}}
-
-  <div class="floater">
-
-    <button type="button" on-tap="toggleScripts">
-      <span class="glyphicon glyphicon-menu-right icon"> </span>                       
-    </button>
-
-  </div>
 
   {{elseif current_page==1}}
     <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
         <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1>
-    </div>
+
+
+        <div class="panel panel-default" >
+          <div class="center-block panel-body">
 
     <ul class="nav nav-pills">
       <li role="presentation" class="dropdown">
@@ -84,13 +50,16 @@
             {{/each}}
         </ul>
       </li>
-      
+
       <li><a on-tap="prev"><span aria-hidden="true">&larr;</span> Previous</a></li>
       <li><a on-tap="next">Next <span aria-hidden="true">&rarr;</span></a></li>
       <li><a><span class="selected"> {{projects[current_project].title}} </span></a></li>
 
     </ul>
-    
+
+  </div>
+</div>
+
       <div class="panel panel-default" >
         <div class="center-block panel-body">
           <p>{{projects[current_project].description}}</p>
@@ -103,56 +72,27 @@
         </div>
       </div>
 
-     {{#if projects[current_project].visual}}
-     <div id="carousel-example-generic" class="carousel slide text-center" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        {{#each projects[current_project].visuals:num}}
-        <li data-target="#carousel-example-generic" data-slide-to="{{num}}" {{#if num==0}}class="active"{{/if}}></li>
-        {{/each}}
-      </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        {{#each projects[current_project].visuals:num}}
-        <div class="item {{#if num==0}}active{{/if}}">
-          <img class="img-responsive center-block" src="Images/{{this}}" height="946" width="587">
-          <div class="carousel-caption">
-            {{projects[current_project].captions[num]}}
-          </div>
-        </div>
-        {{/each}}
-      </div>
-
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    {{/if}}
 
 
 
       <div class="panel panel-default">
-      <div class="center-block panel-body">
-      <div class="row" intro-outro='fade'>
-      {{#each projects[current_project].languages}}
-      <div class="outlined col-sm-3">
-        <span>{{this}}</span> 
-      </div> 
-      {{/each}}
+        <div class="center-block panel-body">
+          <div class="row" intro-outro='fade'>
+          {{#each projects[current_project].languages}}
+            <div class="outlined col-sm-3">
+              <span>{{this}}</span>
+            </div>
+          {{/each}}
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
 
-    
-    
+
+
+
+
 
 
 
@@ -162,8 +102,11 @@
     </div>
 
     <div class="jumbotron" intro-outro="fade:{duration:fast}">
-    <h2> <span class="glyphicon glyphicon-pencil icon" aria-hidden="true"></span> Curriculem Vitae </h2>
-      
+    <h2> <span class="glyphicon glyphicon-pencil icon" aria-hidden="true"></span> Resume </h2>
+    <div class="right">
+      <a href="./Images/resume.pdf" target="_blank"><span class="glyphicon glyphicon-download-alt icon"></span></a>
+    </div>
+
     <!--<object data="Images/cv.pdf" type='application/pdf' height="880" width="640"> </object>-->
     <h4> Education </h4>
     <div class="row" intro-outro='fade'>
@@ -171,9 +114,11 @@
               <div class="panel panel-default">
                 <div class='panel-body'intro='fade' >
                   {{#with cv.education}}
-                  <p>{{college}}  -  ({{short}}) </p>
-                  <p>{{degree}} - {{yog}}</p>
-                  <p> GPA: {{gpa}}, <span class="class selected"> {{parseFloat(Math.round(gpaMajor * 100) / 100).toFixed(2)}}</span>[in major]</p>
+                  <p>{{college}} -  ({{short}}) </p>
+                  {{#each degrees}}
+                  <p>{{degree}} {{parseFloat(Math.round(gpa * 100) / 100).toFixed(2)}} - {{yog}}</p>
+                  {{/each}}
+
                   {{/with}}
                 </div>
               </div>
@@ -188,19 +133,31 @@
                   {{#with cv.skills}}
                   <p> Languages:
                     {{#each languages:i}}
+                    {{#if i!=(languages.length -1)}}
+                    &nbsp; {{this}},
+                    {{else}}
                     &nbsp; {{this}}
+                    {{/if}}
                     {{/each}}
                   </p>
                    <p> Operating Systems:
-                    {{#each operatingsystems}}
-                    &nbsp; {{this}}
-                    {{/each}}
+                     {{#each operatingsystems:i}}
+                     {{#if i!=(operatingsystems.length -1)}}
+                     &nbsp; {{this}},
+                     {{else}}
+                     &nbsp; {{this}}
+                     {{/if}}
+                     {{/each}}
                   </p>
                    <p> Applications:
-                    {{#each applications}}
-                    &nbsp; {{this}}
-                    {{/each}}
-                  </p>  
+                     {{#each applications:i}}
+                     {{#if i!=(applications.length -1)}}
+                     &nbsp; {{this}},
+                     {{else}}
+                     &nbsp; {{this}}
+                     {{/if}}
+                     {{/each}}
+                  </p>
                   {{/with}}
                 </div>
               </div>
@@ -247,23 +204,23 @@
 
     <h4> Work Experiance </h4>
     <div class="row" intro-outro='fade'>
-            <div class="col-sm-12">
-              <div class="panel panel-default">
-                <div class='panel-body'intro='fade' >
-                  {{#each cv.workexperiance}}
-                    <p>{{company}} - {{title}}</p>
-                    <small>{{range}}</small>
-                    <ul>
-                    {{#each description}}
-                      <li>
-                      {{this}}
-                      </li>
-                    {{/each}}
-                    </ul>
-                  {{/each}}
-                </div>
-              </div>
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class='panel-body'intro='fade' >
+            {{#each cv.workexperiance}}
+            <p>{{company}} - {{title}}</p>
+            <small>{{range}}</small>
+            <ul>
+            {{#each description}}
+            <li>
+            {{this}}
+            </li>
+            {{/each}}
+            </ul>
+            {{/each}}
+          </div>
         </div>
+      </div>
     </div>
 
     <h4> Awards </h4>
@@ -299,7 +256,7 @@
     </div>
 
 
-  
+
 
   </div>
 
@@ -308,10 +265,10 @@
       <h2> <span class="glyphicon glyphicon-cog icon" aria-hidden="true"></span> Employment </h2>
       <div class="row" intro-outro='fade'>
         {{#each jobs}}
-        <div class="col-sm-6">
+        <div class="col-sm-12">
           <div class="panel panel-default">
             <div class='panel-body'intro-outro='fade' >
-              <img height="200" width="200" src="Images/{{visual}}">
+              <img height={{height}} width="{{width}}" src="Images/{{visual}}">
               <h3>{{company}}   -   {{title}} </h3>
               <p>{{range}}</p>
               <div class="well">
@@ -331,6 +288,7 @@
   {{elseif current_page==3}}
       <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
         <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1><br><br>
+    
         <div class="row" intro-outro='fade'>
             {{#each classes}}
             <div class="col-sm-4">
@@ -352,8 +310,8 @@
             {{/each}}
         </div>
       </div>
-      
-  {{elseif current_page==4}}      
+
+  <!-- {{elseif current_page==4}}
       <div class="wrapper" intro-outro="slide:{duration:fast}">
         {{#each playlists:num}}
         {{#if current_playlist==num}}
@@ -370,16 +328,16 @@
                <li><a on-tap="nextSong">Next <span aria-hidden="true">&rarr;</span></a></li>
             </ul>
         </div>
-      </div>
+      </div> -->
 
-  {{elseif current_page==5}}
-    <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
+  {{elseif current_page==4}}
+    <div class="jumbotron jumbotron-fluid text-center" intro-outro="slide:{duration:fast}">
       <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>     About</h1>
       <div class="well">
       <p>{{name}} is an undergraduate at WPI concurrently pursuing a Bachelors' and a Masters degree. Interests include creating dynamic visual displays, and learning about machine learning, AI, and data science. In his 'free' time he enjoys skiing, surfing, playing hockey, and reading books. </p>
       </div>
     </div>
-    <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
+    <div class="jumbotron jumbotron-fluid text-center" intro-outro="slide:{duration:fast}">
       <h1><span class="glyphicon glyphicon-send icon"></span>      Contact</h1>
       <div class="well">
         <p>lovering@wpi.edu</p>
@@ -392,4 +350,3 @@
     </div>
   {{/if}}
 </div>
-

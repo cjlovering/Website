@@ -1,7 +1,31 @@
 //index script
 $(document).ready(function(){
-  
 
+  var contains = function(needle) {
+    var findNaN = needle !== needle;
+    var indexOf;
+
+    if(!findNaN && typeof Array.prototype.indexOf === 'function') {
+        indexOf = Array.prototype.indexOf;
+    } else {
+        indexOf = function(needle) {
+            var i = -1, index = -1;
+
+            for(i = 0; i < this.length; i++) {
+                var item = this[i];
+
+                if((findNaN && item !== item) || item === needle) {
+                    index = i;
+                    break;
+                }
+            }
+
+            return index;
+        };
+    }
+
+    return indexOf.call(this, needle) > -1;
+  };
   var pages = [];
 
   $.get( 'Scripts/template.html' ).then( function ( template ) {
@@ -11,16 +35,16 @@ $(document).ready(function(){
 
       template: template,
 
-      data: { 
+      data: {
         name : 'Charlie Lovering',
         cover: true,
         sections : [],
         current_page : 0,
-        current_project: 1,
-        current_playlist: 0,
+        current_project: 0,
         current_script: 1,
         playlists: [],
         classes : [],
+        dispayedClasses: [],
         jobs: [],
         projects: [],
         cv: {},
@@ -43,7 +67,17 @@ $(document).ready(function(){
       ractive.set('classes', r.classes);
       ractive.set('projects', r.projects);
       ractive.set('cv', r.cv);
-      ractive.set('playlists', r.spotify);
+
+      var categories = [];
+      for (clss in r.classes) {
+        for (cate in r.classes[clss].categories){
+            if (!contains.call(categories, r.classes[clss].categories[cate])){
+              categories.push(r.classes[clss].categories[cate]);
+            }
+        }
+      }
+      ractive.set('dispayedClasses', r.classes);
+      ractive.set('categories', categories);
     });
 
     ractive.on( 'toggle', function ( event ) {
@@ -60,14 +94,6 @@ $(document).ready(function(){
       }});
 
     ractive.on({
-     toggleScripts: function ( event ) {
-        var n = ractive.get("current_script");
-        if (n == 0) n = 1;
-        else if (n == 1) n = 2
-        else n = 0;
-
-        ractive.set( 'current_script', n);
-     },
      nextSong: function ( event ) {
           var n = ractive.get("current_playlist");
           var l = ractive.get('playlists').length;
@@ -80,6 +106,9 @@ $(document).ready(function(){
           ractive.set( 'current_playlist', n );
         })
       },
+      downLoad: function ( event ) {
+        var n = ractive.get("current_playlist");
+       },
       prevSong: function ( event ) {
           var n = ractive.get("current_playlist");
           n -= 1;
@@ -118,6 +147,10 @@ $(document).ready(function(){
           ractive.set( 'current_project', null ).then( function () {
           ractive.set( 'current_project', n );
         })
+      },
+      toggleFilter: function ( event, index ) {
+        var filter = ractive.get('categories')[index];
+        console.log(filter);
       }
     });
   });

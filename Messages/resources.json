@@ -11,14 +11,10 @@
 	    {
 	      "name" : "Professional",
 	      "icon" : "globe"
-	    },    
+	    },
 	    {
 	      "name" : "Classes",
 	      "icon" : "education"
-	    },    
-	    {
-	      "name" : "Music",
-	      "icon" : "music"
 	    },
 	    {
 	      "name" : "About",

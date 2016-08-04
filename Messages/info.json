@@ -6,7 +6,8 @@
 				"average" : 94,
 				"description" : "Topics include requirements analysis and specification, analysis and design, architecture, implementation, testing and quality, configuration management, and project management.",
 				"year": 2015,
-				"term": "A"
+				"term": "A",
+				"categories": [ "Java", "Object-Oriented" ]
 			},
 		    {
 				"name" : "Operating Systems",
@@ -14,7 +15,8 @@
 				"average" : 96,
 				"description" : "Topics include processes, process management, synchronization, input/output devices and their programming, interrupts, memory management, resource allocation, and file systems.",
 				"year": 2015,
-				"term": "A"
+				"term": "A",
+				"categories": [ "C", "systems" ]
 			},
 			{
 				"name" : "Algorithms",
@@ -22,7 +24,8 @@
 				"average" : 95,
 				"description" : "Topics include greedy algorithms, divide-and-conquer, dynamic programming, heuristics, and probabilistic algorithms. Algorithms covered include Dikstra's Algorithm, AStar, quick sort and merge sort.",
 				"year": 2015,
-				"term": "B"
+				"term": "B",
+				"categories": [ "Java", "algorithms" ]
 			},
 			{
 				"name" : "Object-Oriented Design",
@@ -30,7 +33,8 @@
 				"average" : 92,
 				"description" : "Topics include inheritance, exceptions, interface, design by contract, basic design patterns, and reuse.",
 				"year": 2014,
-				"term": "B"
+				"term": "B",
+				"categories": [ "Java", "Object-Oriented", "intro" ]
 			},
 			{
 				"name" : "Program Design",
@@ -38,23 +42,26 @@
 				"average" : 93,
 				"description" : "Design, implementation and testing of programs that use a variety of data structures (structures, lists, and trees), functions, conditionals, and recursion in a functional programming language.",
 				"year": 2014,
-				"term": "A"			
-			},   
+				"term": "A",
+				"categories": [ "functional", "racket" ]
+			},
 			{
 				"name" : "Assembly language",
 				"grade" : "A",
 				"average" : 94,
 				"description" : "Assembly language topics include representations of numbers in computers, basic instruction sets, addressing modes, stacks, low-level I/O, and the functions of compilers, assemblers, andlinkers, and loaders.",
 				"year": 2015,
-				"term": "D"
+				"term": "D",
+				"categories": [ "C", "systems" ]
 			},
 			{
 				"name" : "Systems Programing",
 				"grade" : "A",
-				"average" : 99,
+				"average" : 100,
 				"description" : "Topics include manual memory management, pointers, the machine stack, and I/O mechanisms. The course is designed to confront issues of safe programming with system-level constructs.",
 				"year": 2015,
-				"term": "C"
+				"term":  "C",
+				"categories": [ "C", "systems" ]
 			},
 			{
 				"name" : "Linear Alegbra",
@@ -62,7 +69,8 @@
 				"average" : 94,
 				"description" : "Topics include matrix algebra, systems of equations, eigenvalues and eigenvectors, vector spaces, inner products,  numerical techniques, and applications of linear algebra.",
 				"year": 2015,
-				"term": "D"
+				"term": "D",
+				"categories": [ "mathematical" ]
 			},
 			{
 				"name" : "Probabilty",
@@ -70,7 +78,8 @@
 				"average" : 99,
 				"description" : "Topics to be covered are: basic probability theory, discrete and continuous random variables; special distributions including the Bernoulli, Binomial, Geometric, Poisson, Uniform, Normal, Exponential, Chisquare, Gamma, Weibull, and Beta distributions; multivariate distributions; conditional and marginal distributions; independence; expectation; transformations of univariate random variables. ",
 				"year": 2015,
-				"term": "C"
+				"term": "C",
+				"categories": [ "mathematical" ]
 			},
 			{
 				"name" : "Foundations of CS",
@@ -78,7 +87,9 @@
 				"average" : 93,
 				"description" : "Topics include computational models, formal languages, and an introduction to compatibility and complexity theory, including NP-completeness.",
 				"year": 2016,
-				"term": "C"
+				"term": "C",
+				"categories": [ "theoretical" ]
+
 			},
 			{
 				"name" : "Database Systems",
@@ -86,7 +97,9 @@
 				"average" : 97,
 				"description" : "Topics include the relational data model, relational query languages, design theory, and conceptual data design and modeling for relational database design.",
 				"year": 2016,
-				"term": "C"
+				"term": "C",
+				"categories": [ "java" ]
+
 			},
 			{
 				"name" : "Theory of Computation",
@@ -94,7 +107,9 @@
 				"average" : 97,
 				"description" : "Topics include the halting program, the Church-Turing thesis, primitive recursive functions, recursive sets, recursively enumerable sets, NP-completeness, and reducibilities. ",
 				"year": 2016,
-				"term": "D"
+				"term": "D",
+				"categories": [ "theoretical" ]
+
 			},
 			{
 				"name" : "Programming languages",
@@ -102,7 +117,19 @@
 				"average" : -1,
 				"description" : "Topics include data structures for representing programming languages, implementing control structures (such as functions, recursion, and exceptions), garbage collection, and type systems. Students will be expected to implement several small languages using a functional programming language. ",
 				"year": 2016,
-				"term": "D"
+				"term": "D",
+				"categories": [ "theoretical", "functional", "racket" ]
+
+			},
+			{
+				"name" : "Local and Wide Area Networks",
+				"grade" : "A",
+				"average" : -1,
+				"description" : "The theory, design and performance of local area networks are emphasized. The course includes an introduction to queueing analysis and network programming.",
+				"year": 2016,
+				"term": "E",
+				"categories": [ "systems", "networks" ]
+
 			},
 		    {
 				"name" : "Discrete Math",
@@ -110,7 +137,9 @@
 				"average" : 91,
 				"description" : "Topics include functions and relations, sets, countability, groups, graphs, propositional and predicate calculus, and permutations and combinations.",
 				"year": 2015,
-				"term": "A"
+				"term": "A",
+				"categories": [ "theoretical", "mathematical" ]
+
 			},
 			{
 				"name" : "Statistics I",
@@ -118,15 +147,17 @@
 				"average" : 99,
 				"description" : "Basic distributions, and hypothesis testing.",
 				"Year": 2016,
-				"term": "D"
-			}, 
+				"term": "D",
+				"categories": [ "mathematical" ]
+			},
 			{
 				"name" : "Calculus III",
 				"grade" : "A",
 				"average" : 99,
 				"description" : "Topics covered include: numerical methods, indeterminate forms, improper integrals, sequences, Taylor's theorem with remainder, convergence of series and power series, polar coordinates, parametric curves and vector algebra.",
 				"year": 2014,
-				"term": "A"
+				"term": "A",
+				"categories": [ "mathematical" ]
 			},
 		    {
 				"name" : "Calculus IV",
@@ -134,26 +165,50 @@
 				"average" : 98,
 				"description" : "Topics covered include: vector functions, partial derivatives and gradient, multivariable optimization, double and triple integrals, polar coordinates, other coordinate systems and applications.",
 				"year": 2014,
-				"term": "B"
+				"term": "B",
+				"categories": [ "mathematical" ]
 			}
 		],
     	"jobs"	:[
-			{
+				{
+						"company" : "Silicon Labs",
+						"title"	: "Software Engineer Intern",
+						"range"	: "May 2016  -  August 2016",
+						"description" : "Focused in network security, building a fuzz-testing engine to test the security of the Thread protocol stack. Developed an internal plugin to test cache-performance of a micro-chip",
+						"visual" : "slabs.png",
+						"height" : 200,
+						"width" : 400
+					},
+				{
 	    		"company" : "WPI Computer Science",
 	    		"title"	: "Teaching Assistant",
 	    		"range"	: "September 2015  -  Current",
-	    		"description" : "Systems Programming, Program Design. Lead labs, held office hours and graded student work.",
-	    		"visual" : "wpi.png"
+	    		"description" : "Machine Organization and Assembly, Systems Programming, Program Design. Lead labs, held office hours and graded student work.",
+	    		"visual" : "wpi.png",
+					"height" : 200,
+					"width" : 200
 	    	},
 	    	{
 	    		"company" : "Imagitas",
 	    		"title"	: "Software Engineer Intern",
 	    		"range"	: "June 2015  -  August 2015",
 	    		"description" : "Wrote, modified and enhanced build and deployment scripts. Enhanced testing with a robot suite using selenium. Helped move group from SVN to git.",
-	    		"visual" : "imagitas.jpg"
+	    		"visual" : "imagitas.jpg",
+					"height" : 200,
+					"width" : 200
 	    	}
-	    ],	    
+	    ],
 	    "projects"	:[
+				{
+					"title" : "playground",
+					"brief"	: "a platform for visual displays",
+						"languages"	: ["Javascript", "html", "css", "React"],
+						"description" : "Utilized React to structure and organize components, and flux to handle events and information flow. The displays are created on HTML5 canvases and all animations are created with javascript. View it live at http://playground.vision!",
+						"visual" : false,
+						"visuals" : [],
+						"captions" : [],
+						"link": "https://github.com/cjlovering/playground"
+				},
 		    {
 		    	"title" : "Personal Website",
 		    	"brief"	: "This Website.",
@@ -161,7 +216,7 @@
 		        "description" : "Utilized Bootstrap for the visuals, and ractive to neatly separate the data from the site itself.",
 		        "visual" : false,
 		        "visuals" : [],
-		    	"captions" : [],
+		    		"captions" : [],
 		        "link": "https://github.com/cjlovering/Website"
 		    },
 		    {
@@ -174,6 +229,26 @@
 		    	"captions" : ["The Application in Action", "Tutorial for the First Use", "The Winning Team", "Teamwork in Motion"],
 		    	"link": "https://github.com/jrhackett/cs3733-team9"
 		    },
+				{
+					"title" : "Chat",
+					"brief"	: "a socket-level chat service",
+						"languages"	: ["C"],
+						"description" : "This multi-client chat service is built using socket-level programs and makes heavy use of threads in order to keep track of messages and maintain a correct state.",
+						"visual" : false,
+						"visuals" : [],
+						"captions" : [],
+						"link": "https://github.com/cjlovering/Chat"
+				},
+				{
+					"title" : "Gauss-Jordan-Algorithm GUI",
+					"brief"	: "a UI for the Gauss-Jordan-Algorithm",
+						"languages"	: ["Java", "JavaFX"],
+						"description" : "This application can process any system of equations, with any number of variables and determine the values of all the variables - if possible. This was my first attempt at building a UI.",
+						"visual" : false,
+						"visuals" : [],
+						"captions" : [],
+						"link": "https://github.com/cjlovering/Gauss-Jordan-Algorithm"
+				},
 		    {
 		    	"title" : "FXTools",
 		        "brief"	: "A small library of components for JavaFX. This includes a method for creating a Frosty pane",
@@ -210,10 +285,18 @@
 	    	"education" : {
 	    		"college" : "Worcester Polytechnic Institute",
 	    		"short" : "WPI",
-	    		"degree": "Bachelor of Science in Computer Science",
-	    		"yog" : "May 2018",
-	    		"gpa" : 3.97,
-	    		"gpaMajor": 4.00,
+					"degrees" : [
+						{
+							"degree": "Bachelors of Computer Science",
+			    		"yog" : "Feb 2018",
+							"gpa" : 3.97
+						},
+						{
+							"degree": "Masters of Computer Science",
+							"yog" : "May 2018",
+							"gpa" : 4.00
+						}
+					],
 	    		"coursework": [
 					 "Software Engineering", "Operating Systems", "Theory of Computation*", "Algorithms", "Foundations of Computer Science*", "Database Systems*", "Human-Computer Interaction*", "Object-Oriented Design", "Systems Programing", "Machine Organization and Assembly Language"
 	    		]
@@ -223,21 +306,41 @@
 	    			"Java", "C", "Python", "Racket", "Javascript", "Html", "CSS", "Rative.js", "jQuery", "Bootstrap"
 	    		],
 	    		"operatingsystems": [
-	    			"Mac OS", "Ubuntu (Linux)", "Windows"
+	    			"Mac OS", "Ubuntu", "Windows"
 	    		],
 	    		"applications": [
-	    			"Intellij", "Git", "EMACS", "Vim", "Eclipse", "Sublime Text", "NetBeans", "GitHub", "Maven", "Tomcat", "Bamboo", "Virtual Box", "Webstorm"
+	    			"Atom", "Git", "EMACS", "Intellij", "Vim", "Eclipse", "Sublime Text", "NetBeans", "GitHub", "Bamboo", "Virtual Box"
 	    		]
 	    	},
-	    	"classprojects": 
+	    	"classprojects":
 	    		[
 					{
 						"class": "Software Engineering",
 						"range": "October - December 2015",
 						"description":
 							[
-								"Lead large team in organization, structure design and software development in the creation of a Mapping Tool application using Java, UML and the Agile process.",
-								"Built polished UI of the mapping tool using JavaFX, integrating teammates’ work into a final product."
+								"Led 9-person team, building backend for a mapping tool to find the way between locations at WPI",
+								"Built a polished and dynamic UI a mapping tool using JavaFX",
+								"Built highly functional map builder tool"
+							]
+					},
+					{
+						"class": "Local and Wide Area Networks",
+						"range": "June - July 2015",
+						"description":
+							[
+								"Developed socket-level C chat client for multiple concurrent users",
+								"Built interactive interface, and a secure and scalable server infrastructure"
+							]
+					},
+					{
+						"class": "Programming Languages",
+						"range": "June - July 2015",
+						"description":
+							[
+								"Built a type-inferencer",
+								"Implemented an object-oriented language with classes",
+								"Created a language with lists and exceptions"
 							]
 					},
 					{
@@ -271,14 +374,24 @@
 	    		],
 	    "projects":
 	    	[
-	    		"Developed an application that solves any system of equations using the Gauss Jordan Algorithm",
-	    		"Created a dynamic website",
+					"Designed and built a platform for visual displays, using js, HTML5 canvas, React",
+					"Developed an application that solves any system of equations using the Gauss Jordan Algorithm",
 	    		"Used JavaFX to build games 2048 and Snake.",
 	    		"Used Python to create a set of methods that implement discrete mathematical functions",
 	    		"Used JavaScript, Html and CSS to create personal website."
 	    	],
 	    "workexperiance":
 	    	[
+				{
+					"company" : "Silicon Labs",
+					"title"	: "Software Engineer Intern",
+					"range"	: "May 2016  -  August 2016",
+					"description" :
+						[
+							"Focused in network security, building a fuzz-testing engine to test the security of the Thread protocol stack.",
+							"Developed an internal plugin to test cache-performance of a micro-chip"
+						]
+				},
 	    	{
 	    		"company" : "Imagitas",
 	    		"title"	: "Software Engineer Intern",
