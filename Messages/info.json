@@ -298,7 +298,7 @@
 						}
 					],
 	    		"coursework": [
-					 "Software Engineering", "Operating Systems", "Theory of Computation*", "Algorithms", "Foundations of Computer Science*", "Database Systems*", "Human-Computer Interaction*", "Object-Oriented Design", "Systems Programing", "Machine Organization and Assembly Language"
+					 "Software Engineering", "Operating Systems", "Theory of Computation*", "Algorithms", "Foundations of Computer Science", "Database Systems", "Human-Computer Interaction", "Object-Oriented Design", "Systems Programing", "Machine Organization and Assembly Language", "Network Security", "Introduction to Artificial Intelligence", "Data Analytics and Statistical Learning*", "Machine Learning*", "Analysis of Algorithms*", "Cyber Law*", "Data Mining*"
 	    		]
 	    	},
 	    	"skills" : {
@@ -315,6 +315,23 @@
 	    	"classprojects":
 	    		[
 					{
+						"class": "Tools and Techniques: Network Security",
+						"range": "August - Present 2016",
+						"description":
+							[
+							  "Build a lightweight capability gatekeeper utilizing DNS servers and NAT mechanisms",
+							  "Utilize a packet-snooping tool, Wireshark, to monitor user searches"
+							]
+					},
+					{
+						"class": "Introduction to Artificial Intelligence",
+						"range": "August - Present 2016",
+						"description":
+							[
+							"Implemented informed search-algorithms to solve arithmetic maze problems between arbitrary numbers"			
+							]
+					},		
+					{
 						"class": "Software Engineering",
 						"range": "October - December 2015",
 						"description":
@@ -326,7 +343,7 @@
 					},
 					{
 						"class": "Local and Wide Area Networks",
-						"range": "June - July 2015",
+						"range": "May - July 2016",
 						"description":
 							[
 								"Developed socket-level C chat client for multiple concurrent users",
@@ -335,7 +352,7 @@
 					},
 					{
 						"class": "Programming Languages",
-						"range": "June - July 2015",
+						"range": "March - May 2016",
 						"description":
 							[
 								"Built a type-inferencer",
@@ -424,20 +441,5 @@
 	    		"9th at Academic Decathlon Nationals, Hawaii, April 2014",
 	    		"Gold at the Academic Decathlon State Competition in Mathematics, Economics, English Language Arts, Social Science, Speech, and Bronze in Music, Massachusetts, February 2014"
 	    	]
-	    },
-	    "spotify" :
-	    [
-	    {
-	    	"name" : "Alternative",
-	    	"uri"  : "spotify:user:flovering:playlist:2syRZrOjMFcIvWlmw6qRCu"
-	    },
-	    {
-	    	"name" : "Future",
-	    	"uri"  : "spotify:user:flovering:playlist:2R8rZuOnuwJ6xuboC6LX8M"
-	    },
-	    {
-	    	"name" : "Rap",
-	    	"uri"  : "spotify:user:flovering:playlist:1CMJ61UdD2fHSkF3vygUpZ"
 	    }
-	    ]
 	}
