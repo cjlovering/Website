@@ -1,16 +1,16 @@
-<!-- template for ractive -->
+]<!-- template for ractive -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <span class="glyphicon glyphicon-menu-hamburger icon"> </span>
+      <span class="fa fa-bars icon"> </span>
     </button>
       <a class="navbar-brand section" href="#" on-tap="show:0">{{name}}</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         {{#each sections:num}}
-          <li><a href="#" class="section"  on-tap="show:{{num}}"><span class="glyphicon glyphicon-{{icon}} icon {{#if num==current_page}}selected{{/if}}"></span>  {{name}}</a></li>
+          <li><a href="#" class="section"  on-tap="show:{{num}}"><span class="fa fa-{{icon}} icon {{#if num==current_page}}selected{{/if}}"></span>  {{name}}</a></li>
         {{/each}}
       </ul>
     </div>
@@ -33,7 +33,7 @@
 
   {{elseif current_page==1}}
     <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
-        <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1>
+        <h1><span class="fa fa-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1>
 
 
         <div class="panel panel-default" >
@@ -42,7 +42,7 @@
     <ul class="nav nav-pills">
       <li role="presentation" class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          <span class="glyphicon glyphicon-menu-hamburger icon"></span>
+          <span class="fa fa-bars icon"></span>
         </a>
         <ul class="dropdown-menu">
             {{#each projects:num}}
@@ -98,13 +98,13 @@
 
   {{elseif current_page==2}}
     <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
-        <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1>
+        <h1><span class="fa fa-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1>
     </div>
 
     <div class="jumbotron" intro-outro="fade:{duration:fast}">
-    <h2> <span class="glyphicon glyphicon-pencil icon" aria-hidden="true"></span> Resume </h2>
+    <h2> <span class="fa fa-pencil icon" aria-hidden="true"></span> Resume </h2>
     <div class="right">
-      <a href="Images/Resume.pdf" target="_blank"><span class="glyphicon glyphicon-download-alt icon"></span></a>
+      <a href="Images/Resume.pdf" target="_blank"><span class="fa fa-download-alt icon"></span></a>
     </div>
 
     <!--<object data="Images/cv.pdf" type='application/pdf' height="880" width="640"> </object>-->
@@ -262,7 +262,7 @@
 
 
     <div class="jumbotron text-center" intro-outro="fade:{duration:fast}">
-      <h2> <span class="glyphicon glyphicon-cog icon" aria-hidden="true"></span> Employment </h2>
+      <h2> <span class="fa fa-cog icon" aria-hidden="true"></span> Employment </h2>
       <div class="row" intro-outro='fade'>
         {{#each jobs}}
         <div class="col-sm-12">
@@ -287,7 +287,7 @@
 
   {{elseif current_page==3}}
       <div class="jumbotron text-center" intro-outro="slide:{duration:fast}">
-        <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1><br><br>
+        <h1><span class="fa fa-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h1><br><br>
 
         <div class="row" intro-outro='fade'>
             {{#each classes}}
@@ -321,7 +321,7 @@
         {{/if}}
         {{/each}}
         <div class="outlined col-sm-4">
-            <h3><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h3>
+            <h3><span class="fa fa-{{sections[current_page].icon}} icon"></span>  {{sections[current_page].name}}</h3>
             <ul class="nav nav-pills">
                <li><a on-tap="prevSong"><span aria-hidden="true">&larr;</span> Previous</a></li>
                <li><a><span> {{playlists[current_playlist].name}} </span></a></li>
@@ -332,13 +332,13 @@
 
   {{elseif current_page==4}}
     <div class="jumbotron jumbotron-fluid text-center" intro-outro="slide:{duration:fast}">
-      <h1><span class="glyphicon glyphicon-{{sections[current_page].icon}} icon"></span>     About</h1>
+      <h1><span class="fa fa-{{sections[current_page].icon}} icon"></span>     About</h1>
       <div class="well">
       <p>{{name}} is an undergraduate at WPI concurrently pursuing a Bachelors' and a Masters degree. Interests include creating dynamic visual displays, and learning about machine learning, AI, and data science. In his 'free' time he enjoys skiing, surfing, playing hockey, and reading books. </p>
       </div>
     </div>
     <div class="jumbotron jumbotron-fluid text-center" intro-outro="slide:{duration:fast}">
-      <h1><span class="glyphicon glyphicon-send icon"></span>      Contact</h1>
+      <h1><span class="fa fa-send icon"></span>      Contact</h1>
       <div class="well">
         <p>lovering at wpi.edu</p>
         <p>Teaching Assistant (Undergraduate)</p>
